@@ -1,0 +1,22 @@
+.showall .content { display: none;}
+.showall:target .content { display: block; }
+
+body{background-color: rgb(221, 255, 244) ;font-family: 'Times New Roman', Times, serif; font-size: 16px ;margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom: 2%;}
+header{background-color: rgb(255, 254, 220); height: auto; font-size: large;}
+nav{background-color: rgb(171, 234, 255);}
+h1{text-align: center; font-family: Arial, Helvetica, sans-serif; color: aqua;}
+h2{text-align: center; font-family: Arial, Helvetica, sans-serif; color: darkblue;}
+h3{text-align: center; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 99, 99); font-size: 120%;}
+h4{text-align: center; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 99, 99); font-size: 150%;}
+main{background-color: lightyellow; font-size: medium; padding-left: 2%;}
+footer{background-color: lightgreen; height: auto;}
+div{display: inline-block; text-align: left;}
+div img{border: 2px solid rgb(101, 100, 100); border-radius: 10px; box-shadow: 5px 5px 10px rgba(0,0,0,0.5); margin: 10px; padding: 5px;}
+img{height: 200px;}
+li{list-style-type: square; font-size: medium; margin-left: 20px; display: inline-block; text-align: center ;width: 22%;}
+p{line-height: 1.5; width: 50%; display:block; font-size: large; text-align: left; padding-left: 2%;}
+
+a:link{ text-decoration: none; }
+a:visited{ color: rgb(143, 7, 255); }
+a:hover, a:focus { color: rgb(255, 11, 210); }
+a:active{ color: rgb(255, 0, 0); }
