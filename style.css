@@ -1,0 +1,80 @@
+
+/* === MOBILE-FIRST DEFAULT STYLES === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+figure {
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+figcaption {
+  margin-top: 8px;
+}
+
+/* === TABLET VIEW (≥772px) === */
+@media (min-width: 772px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  figure {
+    border-radius: 50%;
+  }
+
+  figure:last-child {
+    grid-column: span 2;
+  }
+}
+
+/* === LARGE SCREEN VIEW (≥992px) === */
+@media (min-width: 992px) {
+  figure {
+    border-radius: 0;
+  }
+
+  figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+}
+
+/* === USER PREFERENCE: REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  figure {
+    transition: none;
+  }
+}
+
+/* === DARK MODE === */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #f5d142;
+  }
+
+  figure {
+    background-color: #222;
+    color: #f5d142;
+    border-color: #000;
+  }
+}
